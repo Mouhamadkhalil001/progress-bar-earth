@@ -1,0 +1,97 @@
+`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Progress Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="universe">
+        <!-- Stars background -->
+        <div class="stars"></div>
+        
+        <!-- Cosmic ring flows -->
+        <div class="cosmic-rings">
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+        </div>
+        
+        <!-- Main progress element -->
+        <div class="planet-container">
+            <div class="orbit" id="orbit">
+                <div class="satellite" id="satellite">
+                    <div class="satellite-glow"></div>
+                </div>
+            </div>
+            
+            <div class="planet" id="progressPlanet">
+                <!-- Progress ocean -->
+                <div class="ocean" id="ocean">
+                    <!-- Multiple wave layers -->
+                    <svg viewBox="0 0 560 20" class="ocean-wave ocean-wave-1">
+                        <path d="M0,10 C30,12 70,8 100,10 C130,12 170,8 200,10 C230,12 270,8 300,10 C330,12 370,8 400,10 C430,12 470,8 500,10 C530,12 570,8 600,10 L600,30 L0,30 Z"></path>
+                    </svg>
+                    <svg viewBox="0 0 560 20" class="ocean-wave ocean-wave-2">
+                        <path d="M0,10 C30,8 70,12 100,10 C130,8 170,12 200,10 C230,8 270,12 300,10 C330,8 370,12 400,10 C430,8 470,12 500,10 C530,8 570,12 600,10 L600,30 L0,30 Z"></path>
+                    </svg>
+                    <svg viewBox="0 0 560 20" class="ocean-wave ocean-wave-3">
+                        <path d="M0,15 C40,10 80,15 120,10 C160,5 200,15 240,10 C280,5 320,15 360,10 C400,15 440,5 480,10 C520,15 560,5 600,10 L600,30 L0,30 Z"></path>
+                    </svg>
+                </div>
+                
+                <!-- Atmospheric glow -->
+                <div class="atmosphere"></div>
+                
+                <!-- Clouds that float around -->
+                <div class="clouds">
+                    <div class="cloud cloud-1"></div>
+                    <div class="cloud cloud-2"></div>
+                    <div class="cloud cloud-3"></div>
+                </div>
+                
+                <!-- Continental features -->
+                <div class="continents">
+                    <div class="continent continent-1"></div>
+                    <div class="continent continent-2"></div>
+                    <div class="continent continent-3"></div>
+                </div>
+                
+                <!-- Progress display -->
+                <div class="progress-display">
+                    <div class="progress-text-container">
+                        <div class="progress-text" id="progressText">0%</div>
+                        <div class="progress-label">TERRAFORMING</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- User info hologram -->
+            <div class="hologram-container">
+                <div class="hologram">
+                    <div class="hologram-line"></div>
+                    <div class="hologram-data">
+                        <div class="user-id">PILOT: Mouhamadkhalil001</div>
+                        <div class="timestamp">SYNC: 2025-03-20 18:19:53</div>
+                    </div>
+                    <div class="hologram-line"></div>
+                </div>
+            </div>
+        </div>
+                
+        <!-- Particle systems -->
+        <div class="particles-container" id="particles"></div>
+        
+        <!-- Interactive elements -->
+        <div class="controls">
+            <button class="control-btn" id="resetBtn">
+                <span class="btn-icon">⟳</span>
+                <span class="btn-glow"></span>
+            </button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
